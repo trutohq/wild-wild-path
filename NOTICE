@@ -1,0 +1,25 @@
+wild-wild-path (Go)
+Copyright 2026 Truto
+
+This product includes software originally developed as wild-wild-path:
+
+    wild-wild-path
+    Copyright ehmicky <ehmicky@gmail.com>
+    https://github.com/ehmicky/wild-wild-path
+    Licensed under the Apache License, Version 2.0
+
+MODIFICATIONS
+-------------
+
+This is a port to Go of wild-wild-path 3.6.0. It is not a translation of the
+upstream source: it is an independent implementation written against the
+upstream library's documented behaviour and verified by differential testing
+against it.
+
+Scope differs deliberately. Truto uses a subset of wild-wild-path — get, list,
+set and remove, with the wildcard, union, slice and regex path syntax — and only
+that subset is implemented. Query serialisation, the class-based API and the
+options this codebase does not exercise are absent.
+
+Behavioural differences from upstream, where any are found, are recorded in
+DIVERGENCES.md rather than silently corrected.
